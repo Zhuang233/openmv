@@ -5,7 +5,7 @@ uart3 = UART(3,9600)
 
 def float_to_bytes(f):
     # 将浮点数转换为字节数组
-    b = struct.pack('!f', f)
+    b = struct.pack('f', f)
     return bytearray(b)
 
 f = 1.234
